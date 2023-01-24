@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./style.css" />
+		<title>ストップウォッチ</title>
+	</head>
+	<body>
+		<h3>ストップウォッチ</h3>
+		<div class="container">
+			<!-- <div id="time">0:0:0:0</div> -->
+			<div class="time">
+				<div class="displaytime" id="hours">0</div>
+				<div class="colon">:</div>
+				<div class="displaytime" id="minutes">0</div>
+				<div class="colon">:</div>
+				<div class="displaytime" id="seconds">0</div>
+				<div class="colon">:</div>
+				<div class="displaytime" id="milliseconds">0</div>
+			</div>
+
+			<div class="buttons">
+				<!-- type属性 フォーム部品の種類を指定する -->
+				<!-- value属性 入力初期値を指定する方法 -->
+				<!-- valueに入力した文字がブラウザに表示される -->
+				<!-- inputタグとbuttonタグの使い分けを理解する -->
+				<input id="start" type="button" value="start" />
+				<input id="stop" type="button" value="stop" />
+				<input id="reset" type="button" value="reset" />
+			</div>
+		</div>
+		<!-- DOM要素を読み込んだ後であればJsが参照できる -->
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
